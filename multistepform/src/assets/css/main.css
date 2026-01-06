@@ -1,7 +1,125 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+* {
+  font-family: "Ubuntu";
+}
 .container  {
-    max-width: 864px;
-    margin: 0 auto;
+    width: 950px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 100px;
 }
-.left-nav {
+#app {
+    padding-top: 60px;
+    background-color: rgb(228, 250, 242);
+}
 
+/* LEFT NAV LEFT NAV LEFT NAV LEFT NAV */
+    .left-nav {
+        width: 461px;
+        background-repeat: no-repeat;
+        padding: 40px 40px;
+        border-radius: 10px;
+        max-width: 274px;
+        height: 568px;
+        margin-right: 91px;
+    }
+    .nav-item {
+        display: flex;
+        margin-bottom: 25px;
+        align-items: center;
+    }
+    .nav-item button {
+        border-radius: 100px;
+        height: 50px;
+        width: 50px;
+        color: #FFF;
+        border: 1px solid #FFF;
+        background-color: inherit;
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .nav-item-text h4 {
+        margin-bottom: 5px;
+        font-weight: 400;
+        color: #d3d3d3;
+        font-size: 13px;
+    }
+    .nav-item-text p {
+        font-weight: 600;
+        color: #FFF;
+    }
+
+/* LEFT NAV LEFT NAV LEFT NAV */
+.right-form {
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
 }
+/* RIGHT FORM RIGHT FORM RIGHT FORM RIGHT FORM */
+
+.content1 h1{
+        color: #2c4158;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .content1 p {
+        color: #888888;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .form  {
+        display: flex;
+        flex-direction: column;
+    }
+    .form label {
+        color: #000;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form input {
+        padding: 10px;
+        margin-bottom: 23px;
+        border-radius: 10px;
+        border: 2px solid #cccccc;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .form button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #2e67a2;
+        color: #FFF;
+        padding: 15px 20px;
+    }
+/* RIGHT FORM RIGHT FORM RIGHT FORM RIGHT FORM */
+
+/* SELECT PLAN SELECT PLAN SELECT PLAN */ 
