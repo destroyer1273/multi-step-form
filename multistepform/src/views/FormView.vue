@@ -54,10 +54,10 @@ const currentStep = ref(1);
                 <input type="text" placeholder="email" id="email">
                 <label for="phone">Phone Number</label>
                 <input type="text" placeholder="+79921229322" id="phone">
-                <button>Next step</button>
+                <button class="nextstep">Next step</button>
             </form>
         </div> -->
-        <div class="content2">
+        <!-- <div class="content2">
             <h1>Select your plan</h1>
             <p class="content2-titlep">You have the option of monthly or yearly billing</p>
             <div class="select-div">
@@ -79,57 +79,82 @@ const currentStep = ref(1);
             </div>
             <div class="check">
                 <p>Monthly</p>
+                <input type="checkbox" id="switch" class="toggle-input"/><label class="toggle-label" for="switch">Toggle</label>
                 <p>Early</p>
             </div>
-            <button>Go back</button>
-            <button>Next step</button>
+            <button class="goback">Go back</button>
+            <button class="nextstep">Next step</button>
+        </div> -->
+        <div class="content3">
+            <h1>Pick add-ons</h1>
+            <p class="content3-titlep">Add-ons help</p>
+            <div>
+                <div class="content3-select-item">
+                    <input type="checkbox">
+                    <div class="content3-text">
+                        <h3>Online service</h3>
+                        <p>Access to multiplayer games</p>
+                    </div>
+                    <p class="content3-price">+$1/mo</p>                    
+                </div>
+                <div class="content3-select-item">
+                    <input type="checkbox">
+                    <div class="content3-text">
+                        <h3>Larger storage</h3>
+                        <p>Extra 1TB of cloud save</p>
+                    </div>
+                    <p class="content3-price">+$2/mo</p>
+                </div>
+                <div class="content3-select-item">
+                    <input type="checkbox">
+                    <div class="content3-text">
+                        <h3>Customizable profile</h3>
+                        <p>Custom theme on your profile</p>
+                    </div>
+                    <p class="content3-price">+$2/mo</p>
+                </div>
+            </div>
+            <button class="goback">Go back</button>
+            <button class="nextstep">Next step</button>
         </div>
     </div>
   </div>
 </template>
 
 <style>
-    .content2 h1{
+    
+    .content3 h1{
         color: #2c4158;
         font-weight: 600;
         margin-bottom: 15px;
     }
-    .content2-titlep {
+    .content3-titlep {
         color: #888888;
         font-size: 16px;
         margin-bottom: 40px;
     }
-    .select-div {
+    .content3-select-item {
         display: flex;
-        flex-direction: row;
-        column-gap: 20px;
-        justify-content: space-around;
         margin-bottom: 30px;
-
-    }
-    .select-item {  
-        border: 1px solid #000;
+        border: 1.5px solid #78409e;
         border-radius: 10px;
-        width: 100%;
-        padding: 20px 20px 20px 20px;
-    }
-    .select-item h3 {
-        margin-bottom: 6px;
-    }
-    .check {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        background-color: #eefaff;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 20px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        column-gap: 25px;
     }
-    .check p {
-        font-weight: 600;
+    .content3-price {
+        color: #78409e;
+        font-weight: 500;
     }
-    .select-img {
-        margin-bottom: 40px;
+    .content3-text {
+        width: 100%;
+    }
+    .content3-text h3 {
+        color: #2c4158;
+    }
+    .content3-text p {
+        color: #888888;
+        font-size: 16px;
     }
 </style>

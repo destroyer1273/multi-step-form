@@ -110,7 +110,7 @@
         font-size: 15px;
         font-weight: 500;
     }
-    .form button {
+    .nextstep {
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -120,6 +120,107 @@
         color: #FFF;
         padding: 15px 20px;
     }
+    .goback {
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        border: none;
+        padding: 15px 0px;
+        color: #2c4158;
+        background-color: inherit;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    
 /* RIGHT FORM RIGHT FORM RIGHT FORM RIGHT FORM */
 
 /* SELECT PLAN SELECT PLAN SELECT PLAN */ 
+    .content2 h1{
+            color: #2c4158;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+    .content2-titlep {
+        color: #888888;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .select-div {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: space-around;
+        margin-bottom: 30px;
+
+    }
+    .select-item {  
+        border: 1px solid #000;
+        border-radius: 10px;
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+    }
+    .select-item h3 {
+        margin-bottom: 6px;
+    }
+    .check {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #eefaff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .check p {
+        font-weight: 600;
+    }
+    .select-img {
+        margin-bottom: 40px;
+    }
+/* TOGGLE TOGGLE */
+        .toggle-input {
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+        .toggle-label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 40px;
+            height: 20px;
+            background: #2c4158;
+            display: block;
+            border-radius: 100px;
+            position: relative;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .toggle-label:after {
+            content: "";
+            position: absolute;
+            background-color: #eefaff;
+            width: 13.5px;
+            height: 13.5px;
+            top: 3px;
+            left: 3px;
+            border-radius: 100px;
+            transition: transform 0.3s ease-in-out, left 0.3s ease-in-out, width 0.1s ease-in-out;
+        }
+        .toggle-input:checked + .toggle-label:after {
+            left: calc(100% - 3px);
+            transform: translateX(-100%);
+        }
+        .toggle-label:active:after {
+            width: 20px;
+        }
+    /* toggle toggle toggle */
+/* SELECT PLAN SELECT PLAN SELECT PLAN */
+
+/* CONTENT3 CONTENT3 CONTENT3 */
+
+
+
+
+/* CONTENT3 CONTENT3 CONTENT3 */
